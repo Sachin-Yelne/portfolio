@@ -12,7 +12,7 @@ const projects = [
     title: "Tale — Real‑time Sports Betting Marketplace",
     description:
       "Launched a real‑time marketplace where bettors monetize strategies via performance‑based subscriptions, with live leaderboards and analytics.",
-    image: "/tale-home.png",
+    image: "/portfolio/tale-home.png",
     technologies: ["Firebase Cloud Functions", "Firestore", "Angular", "WebSocket", "Stripe"],
     category: "Web Development",
     github: "https://github.com/Christoph5418/Tale",
@@ -24,7 +24,7 @@ const projects = [
     title: "Midtown Housing",
     description:
       "Full‑stack sublease platform for Midtown Atlanta students. React, Node, Express, MongoDB + Google Maps; advanced search/filtering enabled 60+ sublease matches.",
-    image: "/midtown-housing.jpg",
+    image: "/portfolio/midtown-housing.jpg",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Google Maps API"],
     category: "Web Development",
     github: "https://github.com/Sachin-Yelne/midtown-sublease",
@@ -35,7 +35,7 @@ const projects = [
     title: "Better Spotify Wrapped",
     description:
       "Always‑on Spotify Wrapped with deeper insights. Connected Spotify API, designed polished data views, and led a 5‑person team to ship end‑to‑end.",
-    image: "/spotify.jpg",
+    image: "/portfolio/spotify.jpg",
     technologies: ["React", "Node.js", "Express", "Spotify API"],
     category: "Web Development",
     github: "https://github.com/oskarbringle/spotify-wrapper",
@@ -46,7 +46,7 @@ const projects = [
     title: "Distributed File System",
     description:
       "Implementation of a fault-tolerant distributed file system with replication and consistency guarantees.",
-    image: "/distributed-system-architecture-diagram.jpg",
+    image: "/portfolio/distributed-system-architecture-diagram.jpg",
     technologies: ["Go", "gRPC", "Docker", "Kubernetes"],
     category: "Systems",
     github: "https://github.com",
