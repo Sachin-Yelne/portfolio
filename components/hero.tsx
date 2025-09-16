@@ -79,7 +79,7 @@ export function Hero() {
             asChild
             className="transform hover:scale-105 transition-all duration-200 hover:shadow-lg bg-transparent"
           >
-            <a href="/Yelne_Sachin_Aug_2025_Resume.pdf" download="Sachin_Yelne_Resume.pdf" aria-label="Download resume PDF">
+            <a href="/portfolio/Yelne_Sachin_Aug_2025_Resume.pdf" download="Sachin_Yelne_Resume.pdf" aria-label="Download resume PDF">
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </a>
