@@ -12,7 +12,7 @@ const projects = [
     title: "Tale — Real‑time Sports Betting Marketplace",
     description:
       "Launched a real‑time marketplace where bettors monetize strategies via performance‑based subscriptions, with live leaderboards and analytics.",
-    image: "/tale-logo.ico",
+    image: "/tale-home.png",
     technologies: ["Firebase Cloud Functions", "Firestore", "Angular", "WebSocket", "Stripe"],
     category: "Web Development",
     github: "https://github.com/Christoph5418/Tale",
@@ -21,25 +21,25 @@ const projects = [
   },
   {
     id: 2,
-    title: "Campus Event Tracker",
+    title: "Midtown Housing",
     description:
-      "Full-stack web application for Georgia Tech students to discover and track campus events with real-time notifications.",
-    image: "/campus-events-mobile-app.jpg",
-    technologies: ["React", "TypeScript", "Express", "PostgreSQL", "Socket.io"],
+      "Full‑stack sublease platform for Midtown Atlanta students. React, Node, Express, MongoDB + Google Maps; advanced search/filtering enabled 60+ sublease matches.",
+    image: "/midtown-housing.jpg",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Google Maps API"],
     category: "Web Development",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/Sachin-Yelne/midtown-sublease",
+    demo: "https://midtown-sublease.onrender.com/",
   },
   {
     id: 3,
-    title: "Sustainable Route Planner",
+    title: "Better Spotify Wrapped",
     description:
-      "Mobile app that calculates the most environmentally friendly routes using public transportation and walking paths.",
-    image: "/green-route-planning-app.jpg",
-    technologies: ["React Native", "Google Maps API", "Firebase", "Node.js"],
-    category: "Mobile Development",
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "Always‑on Spotify Wrapped with deeper insights. Connected Spotify API, designed polished data views, and led a 5‑person team to ship end‑to‑end.",
+    image: "/spotify.jpg",
+    technologies: ["React", "Node.js", "Express", "Spotify API"],
+    category: "Web Development",
+    github: "https://github.com/oskarbringle/spotify-wrapper",
+    demo: "https://sites.google.com/view/aff-group40-2024/spotify-wrapper",
   },
   {
     id: 4,
@@ -91,7 +91,7 @@ export function Projects() {
           {filteredProjects.map((project, index) => (
             <Card
               key={project.id}
-              className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden"
+              className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden h-full flex flex-col"
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
               style={{
@@ -119,7 +119,7 @@ export function Projects() {
                   </div>
                 </div>
               </div>
-              <CardHeader>
+              <CardHeader className="flex-1">
                 <div className="flex justify-between items-start mb-2">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
                   <Badge
@@ -129,9 +129,9 @@ export function Projects() {
                     {project.category}
                   </Badge>
                 </div>
-                <p className="text-muted-foreground text-pretty leading-relaxed">{project.description}</p>
+                <p className="text-muted-foreground text-pretty leading-relaxed min-h-[48px]">{project.description}</p>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge
