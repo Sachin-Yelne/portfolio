@@ -9,14 +9,15 @@ import { Github, ExternalLink, Filter, Eye, Star } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "AI Study Buddy",
+    title: "Tale — Real‑time Sports Betting Marketplace",
     description:
-      "A machine learning-powered study assistant that helps students optimize their learning schedule and provides personalized quiz questions.",
-    image: "/ai-study-app-interface.jpg",
-    technologies: ["Python", "TensorFlow", "React", "Node.js", "MongoDB"],
-    category: "Machine Learning",
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "Launched a real‑time marketplace where bettors monetize strategies via performance‑based subscriptions, with live leaderboards and analytics.",
+    image: "/tale-logo.ico",
+    technologies: ["Firebase Cloud Functions", "Firestore", "Angular", "WebSocket", "Stripe"],
+    category: "Web Development",
+    github: "https://github.com/Christoph5418/Tale",
+    demo: "https://talebets.com/",
+    App: "https://apps.apple.com/us/app/talebets/id6739745287",
   },
   {
     id: 2,
@@ -161,7 +162,15 @@ export function Projects() {
                     <Button size="sm" asChild className="transform hover:scale-105 transition-all duration-200">
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+                        Website
+                      </a>
+                    </Button>
+                  )}
+                  {project.App && (
+                    <Button size="sm" asChild className="transform hover:scale-105 transition-all duration-200">
+                      <a href={project.App} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        App
                       </a>
                     </Button>
                   )}

@@ -4,40 +4,55 @@ import { Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "Software Engineering Intern",
-    company: "Microsoft",
-    location: "Atlanta, GA",
-    period: "Summer 2024",
-    description:
-      "Developed machine learning features for Azure Cognitive Services, improving model accuracy by 15%. Collaborated with cross-functional teams to implement scalable cloud solutions.",
-    technologies: ["Python", "Azure", "TensorFlow", "Docker"],
+    title: "Software Engineer Intern, Generative AI",
+    company: "Meta",
+    location: "New York, NY",
+    period: "May 2025 – Aug 2025",
+    description: (
+      <>
+        Built PHP RAG pipelines for instant answers on
+        {' '}
+        <a
+          href="https://meta.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-primary/60 hover:text-primary"
+        >
+          meta.ai
+        </a>
+        {' '}
+        across stocks/people/weather/sports/trends, reducing hallucinations. Delivered typed React + GraphQL widgets and
+        onboarded Threads as a retrieval source; standardized context formats with 3 teams and added tests/monitoring.
+      </>
+    ),
+    technologies: ["PHP", "Relay", "React", "GraphQL", "RAG", "APIs", "Hive tables"],
   },
   {
-    title: "Full Stack Developer",
-    company: "GT Startup Incubator",
+    title: "Co‑Founder, CTO",
+    company: "Tale",
     location: "Atlanta, GA",
-    period: "Jan 2024 - Present",
+    period: "Sep 2025 – Present",
     description:
-      "Leading development of a student entrepreneurship platform. Built responsive web applications and RESTful APIs serving 500+ active users.",
-    technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
+      "Launched a real‑time sports betting marketplace generating $5K+ subscription revenue. Built Firebase Cloud Functions + Firestore backend processing 10K+/min bet updates (<100ms) and an Angular/WebSocket frontend for live leaderboards, filters, and analytics; integrated Stripe with fraud‑prevention workflows.",
+    technologies: ["Firebase Cloud Functions", "Firestore", "Angular", "WebSocket", "Stripe"],
   },
   {
-    title: "Research Assistant",
-    company: "Georgia Tech ML Lab",
-    location: "Atlanta, GA",
-    period: "Sep 2023 - Dec 2023",
+    title: "Software Developer Intern, Risk & Fraud",
+    company: "JPMorgan Chase",
+    location: "Columbus, OH",
+    period: "Jun 2024 – Aug 2024",
     description:
-      "Conducted research on natural language processing models for educational applications. Published findings in undergraduate research symposium.",
-    technologies: ["Python", "PyTorch", "BERT", "Jupyter"],
+      "Automated fraud model reporting in Python/SQL, cutting generation time by 96% (8h → 20m) for near‑real‑time monitoring. Evaluated PSI for 26 models to detect drift and shift retraining from weekly to bi‑weekly. Built Spark pipelines to unify performance data and Flask APIs serving live metrics to 400+ analysts.",
+    technologies: ["Python", "SQL", "Apache Spark", "Flask", "PSI"],
   },
   {
-    title: "Teaching Assistant",
-    company: "CS 1331 - Object-Oriented Programming",
-    location: "Georgia Tech",
-    period: "Aug 2023 - Dec 2023",
+    title: "Software Engineer Intern, Luna AI Platform",
+    company: "General Dynamics",
+    location: "Falls Church, VA",
+    period: "Jun 2023 – Aug 2023",
     description:
-      "Assisted 200+ students with Java programming concepts. Led weekly recitation sessions and provided one-on-one tutoring.",
-    technologies: ["Java", "IntelliJ IDEA", "Git"],
+      "Built Python preprocessing CI/CD to convert 2M+ HR docs (.docx/.pdf/.xlsx/.jpeg) to text and load to S3 for model training. Fine‑tuned BERT on SageMaker (91% F1) and deployed an EC2‑hosted ML system enabling automated, at‑scale document categorization for HR teams.",
+    technologies: ["Python", "AWS S3", "AWS SageMaker", "EC2", "BERT", "CI/CD"],
   },
 ]
 
