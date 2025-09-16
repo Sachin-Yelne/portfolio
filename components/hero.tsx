@@ -40,7 +40,7 @@ export function Hero() {
         <div className="flex justify-center mb-6">
           <div className="relative h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56">
             <Image
-              src="/me.jpeg"
+              src="/portfolio/me.jpeg"
               alt="Portrait"
               fill
               sizes="(max-width: 640px) 10rem, (max-width: 768px) 12rem, 14rem"
