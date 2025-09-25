@@ -40,7 +40,7 @@ export function Hero() {
         <div className="flex justify-center mb-6">
           <div className="relative h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56">
             <Image
-              src="/portfolio/me.jpeg"
+              src="me.jpeg"
               alt="Portrait"
               fill
               sizes="(max-width: 640px) 10rem, (max-width: 768px) 12rem, 14rem"
@@ -79,7 +79,7 @@ export function Hero() {
             asChild
             className="transform hover:scale-105 transition-all duration-200 hover:shadow-lg bg-transparent"
           >
-            <a href="/portfolio/Yelne_Sachin_Aug_2025_Resume.pdf" download="Sachin_Yelne_Resume.pdf" aria-label="Download resume PDF">
+            <a href="Yelne_Sachin_Aug_2025_Resume.pdf" download="Sachin_Yelne_Resume.pdf" aria-label="Download resume PDF">
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </a>

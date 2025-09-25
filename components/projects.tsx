@@ -12,7 +12,7 @@ const projects = [
     title: "Tale — Real‑time Sports Betting Marketplace",
     description:
       "Launched a real‑time marketplace where bettors monetize strategies via performance‑based subscriptions, with live leaderboards and analytics.",
-    image: "/portfolio/tale-home.png",
+    image: "tale-home.png",
     technologies: ["Firebase Cloud Functions", "Firestore", "Angular", "WebSocket", "Stripe"],
     category: "Web Development",
     github: "https://github.com/Christoph5418/Tale",
@@ -24,7 +24,7 @@ const projects = [
     title: "Midtown Housing",
     description:
       "Full‑stack sublease platform for Midtown Atlanta students. React, Node, Express, MongoDB + Google Maps; advanced search/filtering enabled 60+ sublease matches.",
-    image: "/portfolio/midtown-housing.jpg",
+    image: "midtown-housing.jpg",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Google Maps API"],
     category: "Web Development",
     github: "https://github.com/Sachin-Yelne/midtown-sublease",
