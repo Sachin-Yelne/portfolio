@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Github, ExternalLink, Filter, Eye, Star } from "lucide-react"
+import { Github, ExternalLink, Filter } from "lucide-react"
 
 const projects = [
   {
@@ -43,13 +43,13 @@ const projects = [
   },
   {
     id: 4,
-    title: "Distributed File System",
+    title: "Algorithmic Trading Strategy",
     description:
-      "Implementation of a fault-tolerant distributed file system with replication and consistency guarantees.",
-    image: "distributed-system-architecture-diagram.jpg",
-    technologies: ["Go", "gRPC", "Docker", "Kubernetes"],
-    category: "Systems",
-    github: "https://github.com",
+      "Advanced quantitative trading strategy combining Minervini momentum criteria with technical indicators (MACD, Stochastic RSI, DMI) for systematic stock screening and automated trading signals.",
+    image: "Algo-Trading.jpeg",
+    technologies: ["Python", "Pandas", "NumPy", "TA-Lib", "yfinance", "Matplotlib"],
+    category: "Machine Learning",
+    github: "https://colab.research.google.com/drive/10QJomN-qeyyNu3xY79LwltGEe1brtbYZ",
   },
 ]
 
@@ -57,7 +57,6 @@ const categories = ["All", "Machine Learning", "Web Development", "Mobile Develo
 
 export function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null)
 
   const filteredProjects =
     selectedCategory === "All" ? projects : projects.filter((project) => project.category === selectedCategory)
@@ -92,8 +91,6 @@ export function Projects() {
             <Card
               key={project.id}
               className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden h-full flex flex-col"
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
               style={{
                 animationDelay: `${index * 100}ms`,
               }}
@@ -104,20 +101,6 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div
-                  className={`absolute inset-0 bg-black/60 flex items-center justify-center gap-4 transition-opacity duration-300 ${
-                    hoveredProject === project.id ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <div className="flex items-center gap-1 text-white">
-                    <Star className="h-4 w-4" />
-                    <span className="text-sm">42</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-white">
-                    <Eye className="h-4 w-4" />
-                    <span className="text-sm">1.2k</span>
-                  </div>
-                </div>
               </div>
               <CardHeader className="flex-1">
                 <div className="flex justify-between items-start mb-2">
