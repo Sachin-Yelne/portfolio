@@ -35,7 +35,7 @@ const projects = [
     title: "Better Spotify Wrapped",
     description:
       "Always‑on Spotify Wrapped with deeper insights. Connected Spotify API, designed polished data views, and led a 5‑person team to ship end‑to‑end.",
-    image: "/portfolio/spotify.jpg",
+    image: "spotify.jpg",
     technologies: ["React", "Node.js", "Express", "Spotify API"],
     category: "Web Development",
     github: "https://github.com/oskarbringle/spotify-wrapper",
@@ -46,7 +46,7 @@ const projects = [
     title: "Distributed File System",
     description:
       "Implementation of a fault-tolerant distributed file system with replication and consistency guarantees.",
-    image: "/portfolio/distributed-system-architecture-diagram.jpg",
+    image: "distributed-system-architecture-diagram.jpg",
     technologies: ["Go", "gRPC", "Docker", "Kubernetes"],
     category: "Systems",
     github: "https://github.com",

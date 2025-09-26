@@ -57,8 +57,8 @@ export function Hero() {
             {displayedText}
             <span className="animate-pulse">|</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed animate-in slide-in-from-bottom-4 duration-1000 delay-300">
-          I love building software that not only solves problems but also enhances the way people interact with technology. Currently pursuing my BS in Computer Science with a focus on machine learning and full-stack development.
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed animate-in slide-in-from-bottom-4 duration-1000 delay-300">
+          I am passionate about building software that not only solves problems but also improves how people interact with technology. Currently pursuing my BS in Computer Science with a focus on machine learning and full-stack development, I enjoy tackling challenges and learning new skills. Beyond coding, I value teamwork, creativity, and perseverance. In my free time, I like going to the gym, playing pickleball, and staying active, which keeps me balanced and motivated. Looking for a challenging opportunity to apply my skills and grow as a developer.
           </p>
         </div>
 

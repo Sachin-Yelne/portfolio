@@ -1,32 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap, Code, Lightbulb } from "lucide-react"
+import Image from "next/image"
 
 export function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">About Me</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            I'm a senior at Georgia Tech studying Computer Science with a passion for creating technology that makes a
-            difference!
-          </p>
-        </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <Card className="text-center hover:shadow-lg transition-shadow">
-            <CardContent className="pt-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <GraduationCap className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Education</h3>
-              <p className="text-muted-foreground text-pretty">
-                BS Computer Science at Georgia Institute of Technology, focusing on Intelligence and Machine Learning
-                threads.
-              </p>
-            </CardContent>
-          </Card>
-
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="pt-6">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -36,6 +17,18 @@ export function About() {
               <p className="text-muted-foreground text-pretty">
                 Full-stack developer with experience in React, Node.js, Python, and cloud technologies. Love building
                 scalable applications.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                <Image src="GT_Logo.png" alt="Georgia Tech logo" width={30} height={30} className="object-contain" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Education</h3>
+              <p className="text-muted-foreground text-pretty">
+                BS CS at Georgia Institute of Technology, focusing on Human-Computer Interaction and Machine Learning.
               </p>
             </CardContent>
           </Card>

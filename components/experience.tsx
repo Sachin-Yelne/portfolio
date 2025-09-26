@@ -1,11 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
+import Image from "next/image"
 
 const experiences = [
   {
     title: "Software Engineer Intern, Generative AI",
     company: "Meta",
+    logo: "Meta.png",
+    logoSize: { width: 65, height: 65 },
     location: "New York, NY",
     period: "May 2025 – Aug 2025",
     description: (
@@ -30,6 +33,8 @@ const experiences = [
   {
     title: "Co‑Founder, CTO",
     company: "Tale",
+    logo: "tale-logo.ico",
+    logoSize: { width: 60, height: 60 },
     location: "Atlanta, GA",
     period: "Sep 2025 – Present",
     description:
@@ -39,6 +44,8 @@ const experiences = [
   {
     title: "Software Developer Intern, Risk & Fraud",
     company: "JPMorgan Chase",
+    logo: "JP-Morgan-Chase-Logo.png",
+    logoSize: { width: 100, height: 10 },
     location: "Columbus, OH",
     period: "Jun 2024 – Aug 2024",
     description:
@@ -48,6 +55,8 @@ const experiences = [
   {
     title: "Software Engineer Intern, Luna AI Platform",
     company: "General Dynamics",
+    logo: "gdit-logo.png",
+    logoSize: { width: 130, height: 130 },
     location: "Falls Church, VA",
     period: "Jun 2023 – Aug 2023",
     description:
@@ -71,20 +80,29 @@ export function Experience() {
           {experiences.map((experience, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                  <div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                  <div className="flex-1">
                     <CardTitle className="text-xl mb-1">{experience.title}</CardTitle>
                     <p className="text-lg font-semibold text-primary">{experience.company}</p>
+                    <div className="flex flex-col sm:items-start gap-1 mt-2">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Calendar className="mr-1 h-4 w-4" />
+                        {experience.period}
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <MapPin className="mr-1 h-4 w-4" />
+                        {experience.location}
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-col sm:items-end gap-1">
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <Calendar className="mr-1 h-4 w-4" />
-                      {experience.period}
-                    </div>
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <MapPin className="mr-1 h-4 w-4" />
-                      {experience.location}
-                    </div>
+                  <div className="flex justify-center sm:justify-end">
+                    <Image
+                      src={experience.logo}
+                      alt={`${experience.company} logo`}
+                      width={experience.logoSize.width}
+                      height={experience.logoSize.height}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </CardHeader>
